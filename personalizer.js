@@ -1,5 +1,5 @@
 const d = document;
-const baseUrl = 'http://127.0.0.1:8003/api'  //'https://smartmanager.wibiocard.com/api'
+const baseUrl = 'https://smartmanager.wibiocard.com/api'
 const channel = 'NFC'
 let apiKey
 var _reader;
