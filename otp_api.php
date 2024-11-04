@@ -4,7 +4,7 @@ namespace App\Helpers;
 
 use http;
 
-class LinOtpRequestHelper
+class WibioOtpRequestHelper
 {
     const SERVER = 'https://otpsandbox.wibiocard.com';
     const USERNAME = 'linotp_adm';
@@ -22,7 +22,7 @@ class LinOtpRequestHelper
 
 /*init()
         POST /admin/login
-        This function is used to authenticate the admin user against the LinOTP server and retrive the session id to continue wirking.
+        This function is used to authenticate the admin user against the WibioOTP server and retrive the session id to continue wirking.
         Parameters
             username – (required) the username
             password – (required) the password
@@ -332,7 +332,7 @@ class LinOtpRequestHelper
         displays the list of the available tokens
         Parameters
             serial – (optional) only this serial will be displayed
-            user –(optional) only the tokens of this user will be displayed. If the user does not exist, linotp will search tokens of users, who contain this substring.
+            user –(optional) only the tokens of this user will be displayed. If the user does not exist, WibioOTP will search tokens of users, who contain this substring.
             viewrealm – (optional) takes a realm, only the tokens in this realm will be displayed
             tokeninfo_format – (optional) if set to “json”, this will be supplied in embedded JSON otherwise, string format is returned with dates in format DD/MM/YYYY TODO
 */
